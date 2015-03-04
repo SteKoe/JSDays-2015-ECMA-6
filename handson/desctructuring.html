@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <title>Traceur Example</title>
+    <meta charset="utf-8"/>
+    <script src="../lib/traceur.js" type="text/javascript"></script>
+    <script src="../lib/bootstrap.js" type="text/javascript"></script>
+    <script type="module">
+        'use strict';
+
+        var config = {
+            name: 'Name',
+            version: "1.0.1",
+            author: "mail@stekoe.de",
+            license: "MIT"
+        };
+
+
+        var {
+            name = "Name",
+            dependencies = {
+                "p1" : "1.0.0"
+            }
+        } = config;
+
+        console.log(name);
+        console.log(dependencies);
+    </script>
+</head>
+<body>
+</body>
+</html>
+
